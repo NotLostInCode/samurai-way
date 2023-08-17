@@ -1,17 +1,13 @@
 import bg from '../../assets/images/bg-samuray-way.webp'
-import s from'./Profile.module.css'
+import s from './Profile.module.css'
 import {MyPosts} from './MyPosts/MyPosts';
+import {ProfileInfo} from './ProfileInfo/ProfileInfo';
 
 export const Profile = () => {
     return (
-        <div>
-            <div>
-                <img src={bg} alt=""/>
-            </div>
-            <div>
-                ava + descr
-            </div>
-        <MyPosts />
+        <div >
+            <ProfileInfo/>
+            <MyPosts/>
         </div>
     )
 }

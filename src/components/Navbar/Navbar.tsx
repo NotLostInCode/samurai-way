@@ -10,16 +10,16 @@ export const Navbar = () => {
                 <NavLink className={({isActive}) => isActive ? s.active : s.item} to={'/profile'}>Profile</NavLink>
             </div>
             <div className={s.item}>
-                <NavLink className={({isActive}) => isActive ? s.active : s.item} to={'/dialogs'}>Messages</NavLink>
+                <NavLink className={({isActive}) => isActive ? s.active : s.item} to={'/dialogs'}>Dialogs</NavLink>
             </div>
             <div className={s.item}>
-                <NavLink className={({isActive}) => isActive ? s.active : s.item} to={'/'}>News</NavLink>
+                <NavLink className={({isActive}) => isActive ? s.active : s.item} to={'/news'}>News</NavLink>
             </div>
             <div className={s.item}>
-                <NavLink className={({isActive}) => isActive ? s.active : s.item} to={'/'}>Music</NavLink>
+                <NavLink className={({isActive}) => isActive ? s.active : s.item} to={'/music'}>Music</NavLink>
             </div>
             <div className={s.item}>
-                <NavLink className={({isActive}) => isActive ? s.active : s.item} to={'/'}>Settings</NavLink>
+                <NavLink className={({isActive}) => isActive ? s.active : s.item} to={'/settings'}>Settings</NavLink>
             </div>
         </nav>
     )
