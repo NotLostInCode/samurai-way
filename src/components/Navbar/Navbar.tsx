@@ -1,8 +1,5 @@
 import s from './Navbar.module.css'
 import {NavLink} from 'react-router-dom';
-import {findAllByDisplayValue} from "@testing-library/react";
-import {useState} from "react";
-
 
 
 export const Navbar = () => {
