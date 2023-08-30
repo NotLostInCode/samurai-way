@@ -5,9 +5,16 @@ type PropsType = {
     message: string
 }
 
-export const Message:React.FC<PropsType> = ({message}) => {
+export const Message:React.FC<PropsType> = (props) => {
     return (
-            <div className={s.message}>{message}</div>
+            <>
+                {/*<div className={s.message}>{props.message}</div>*/}
+                <div><textarea></textarea></div>
+                <div>
+                    <button>Add post</button>
+                </div>
+            </>
+
     );
 };
 
