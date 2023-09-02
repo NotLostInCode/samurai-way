@@ -15,10 +15,11 @@ import {StateType} from "./redux/state";
 type PropsType = {
     state: StateType
     addPost: (postMessage: string) => void
+    updateNewPostText: (newText: string) => void
 }
 
 const App: React.FC<PropsType> = (props) => {
-    const {state, addPost} = props
+    const {state, addPost, updateNewPostText} = props
 
     return (
         <div className="app-wrapper">
@@ -28,7 +29,7 @@ const App: React.FC<PropsType> = (props) => {
                 <Routes>
                     <Route path={'/'} element={<Navigate to={'/profile'}/>}/>
                     <Route path={'/profile'} element={<Profile state={state.profilePage}
-                                                               addPost={addPost}/>}/>
+                                                               addPost={addPost} updateNewPostText={updateNewPostText}/>}/>
                     <Route path={'/dialogs'} element={<Dialogs state={state.dialogsPage}/>}/>
                     <Route path={'/news'} element={<News/>}/>
                     <Route path={'/music'} element={<Music/>}/>
